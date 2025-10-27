@@ -1,0 +1,83 @@
+:root {
+  --brown: #3a2c1a;
+  --cream: #fffaf5;
+  --gold: #dca85f;
+  --choco: #7b4b28;
+  --blue: #b7d8e6;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--brown);
+}
+
+/* Utilidades */
+.text-brown { color: var(--brown); }
+.text-gold { color: var(--gold); }
+.bg-cream { background-color: var(--cream); }
+
+.btn-brown {
+  background-color: var(--brown);
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+.btn-brown:hover {
+  background-color: var(--choco);
+}
+
+.btn-outline-brown {
+  border: 2px solid var(--brown);
+  color: var(--brown);
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+.btn-outline-brown:hover {
+  background-color: var(--brown);
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(135deg, var(--blue), var(--cream));
+  color: var(--brown);
+}
+
+/* Tarjetas */
+.producto {
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.destacado {
+  border: 2px solid var(--gold);
+  position: relative;
+}
+.destacado::after {
+  content: "★ Popular";
+  position: absolute;
+  top: 10px;
+  right: -25px;
+  background: var(--gold);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 5px 25px;
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+/* Galería */
+#galeria img {
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+#galeria img:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cine con Galletas 🍪🎥</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-brown" href="#"
+          >🍪 Cine con Galletas</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sabores">Sabores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tienda">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeria">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#comunidad">Comunidad</a>
+            </li>
+          </ul>
+          <button id="cartBtn" class="btn btn-brown ms-3">Carrito (0)</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section
+      id="inicio"
+      class="hero d-flex flex-column align-items-center justify-content-center text-center"
+    >
+      <div class="container">
+        <h1 class="fw-bold display-5">Cine con Galletas 🍪🎬</h1>
+        <p class="lead mt-3">
+          Historias que se hornean con sabor, creatividad y cultura.
+        </p>
+        <div class="mt-4">
+          <button class="btn btn-brown me-2">Ver el corto</button>
+          <button class="btn btn-outline-brown">Comprar galletas</button>
+        </div>
+        <div class="mt-5 col-md-8 mx-auto text-muted">
+          <h5>Nuestra historia</h5>
+          <p>
+            Somos un emprendimiento audiovisual que fusiona el cine con el
+            sabor. Cada receta tiene un guion y cada aroma una escena. Cada
+            galleta transmite emociones únicas: tradición, creatividad y
+            cultura.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🖼️ GALERÍA VISUAL -->
+    <section id="galeria" class="py-5 text-center bg-light">
+      <div class="container">
+        <h3 class="fw-bold text-brown mb-4">Galería de Momentos</h3>
+        <p class="text-muted mb-5">
+          Capturas del cine, la cocina y la creatividad 🎬🍪
+        </p>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img
+                src="img/1.jpeg"
+                class="img-fluid rounded-4 shadow-sm"
+                alt="Galería 1"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img
+                src="img/2.jpeg"
+                class="img-fluid rounded-4 shadow-sm"
+                alt="Galería 2"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img
+                src="img/3.jpeg"
+                class="img-fluid rounded-4 shadow-sm"
+                alt="Galería 3"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img
+                src="img/4.jpeg"
+                class="img-fluid rounded-4 shadow-sm"
+                alt="Galería 4"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img
+                src="img/5.jpeg"
+                class="img-fluid rounded-4 shadow-sm"
+                alt="Galería 5"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <img
+                src="img/6.jpeg"
+                class="img-fluid rounded-4 shadow-sm"
+                alt="Galería 6"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ICONOS DE VALORES -->
+    <section class="valores py-5 bg-cream text-center">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-3">
+            <i class="bi bi-star fs-1 text-brown"></i>
+            <h6 class="mt-2">Cultura visual</h6>
+          </div>
+          <div class="col-md-3">
+            <i class="bi bi-heart-fill fs-1 text-brown"></i>
+            <h6 class="mt-2">Sabor artesanal</h6>
+          </div>
+          <div class="col-md-3">
+            <i class="bi bi-camera-reels fs-1 text-brown"></i>
+            <h6 class="mt-2">Historias únicas</h6>
+          </div>
+          <div class="col-md-3">
+            <i class="bi bi-cookie fs-1 text-brown"></i>
+            <h6 class="mt-2">Momentos dulces</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA DE SABORES -->
+    <section id="sabores" class="py-5 text-center bg-light">
+      <div class="container">
+        <h3 class="fw-bold text-brown">Sabores que cuentan historias</h3>
+        <p class="text-muted mb-5">Del horno directo a tu corazón 🍪</p>
+
+        <div class="row g-4">
+          <div class="col-md-3 col-sm-6">
+            <img
+              src="img/nutella.jpeg"
+              class="img-fluid rounded shadow-sm"
+              alt="Nutella"
+            />
+            <h6 class="mt-2">Nutella</h6>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img
+              src="img/arequipe.jpeg"
+              class="img-fluid rounded shadow-sm"
+              alt="Arequipe"
+            />
+            <h6 class="mt-2">Arequipe</h6>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img
+              src="img/pistacho.jpeg"
+              class="img-fluid rounded shadow-sm"
+              alt="Pistacho"
+            />
+            <h6 class="mt-2">Pistacho</h6>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img
+              src="img/hershey's.jpeg"
+              class="img-fluid rounded shadow-sm"
+              alt="Hershey's"
+            />
+            <h6 class="mt-2">Hershey's</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIENDA -->
+    <section id="tienda" class="tienda py-5 bg-cream text-center">
+      <div class="container">
+        <h3 class="fw-bold text-brown">Tienda</h3>
+        <p class="text-muted">Regala momentos dulces</p>
+        <div class="row g-4 mt-4">
+          <div class="col-md-4">
+            <div class="card producto h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="fw-bold">Caja Mini</h5>
+                <h4 class="text-gold fw-bold">$20.000</h4>
+                <ul class="list-unstyled text-muted small">
+                  <li>✔ 6 galletas</li>
+                  <li>✔ Selección clásica</li>
+                  <li>✔ Ideal para regalar</li>
+                </ul>
+                <button class="btn btn-outline-brown mt-3" onclick="agregar()">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card producto destacado h-100 shadow">
+              <div class="card-body">
+                <h5 class="fw-bold">Caja Gourmet</h5>
+                <h4 class="text-gold fw-bold">$34.000</h4>
+                <ul class="list-unstyled text-muted small">
+                  <li>✔ 12 galletas</li>
+                  <li>✔ Sabores especiales</li>
+                  <li>✔ Incluye mix</li>
+                </ul>
+                <button class="btn btn-brown mt-3" onclick="agregar()">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card producto h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="fw-bold">Combo Cine</h5>
+                <h4 class="text-gold fw-bold">$40.000</h4>
+                <ul class="list-unstyled text-muted small">
+                  <li>✔ 15 galletas + brownie</li>
+                  <li>✔ Sabor temático</li>
+                  <li>✔ Cartel personalizado</li>
+                </ul>
+                <button class="btn btn-outline-brown mt-3" onclick="agregar()">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 text-center text-muted bg-light mt-5">
+      © <span id="year"></span> Cine con Galletas 🍪 - Todos los derechos
+      reservados.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
